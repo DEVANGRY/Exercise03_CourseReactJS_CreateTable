@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Table</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Program to create tables automatically</h1>
+            <div class="form_table">
+                <div class="contenair_col">
+                    <label for="input_col" class="column"
+                        >Number of columns</label
+                    >
+                    <input
+                        type="text"
+                        name="col"
+                        id="input_col"
+                        placeholder="0,1,2,3,..."
+                        onblur="getValueCol()"
+                    />
+                </div>
+                <div class="contenair_row">
+                    <label for="input_row" class="row">Number of row</label>
+                    <input
+                        type="text"
+                        name="row"
+                        id="input_row"
+                        placeholder="0,1,2,3,..."
+                        onblur="getValueRow()"
+                    />
+                </div>
+            </div>
+            <button
+                id="create_table"
+                onclick="handleCreateTable(getValueCol(),getValueRow())"
+            >
+                Create table
+            </button>
+            <div id="target">
+                <table>
+                    <thead id="head_table">
+                        <tr id="col_table"></tr>
+                    </thead>
+                    <tbody id="body_table"></tbody>
+                </table>
+            </div>
+            <p class="sub_auther">
+                Code by
+                <a href="https://github.com/DEVANGRY" target="_blank">
+                    @L_Q_T</a
+                >
+            </p>
+            <script src="./main.js"></script>
+        </div>
+    </body>
+</html>

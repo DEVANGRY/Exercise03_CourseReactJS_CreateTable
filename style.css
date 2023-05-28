@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2a2f3b;
+    position: relative;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.container .title {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: aqua;
+}
+.container .title:hover {
+    color: #7787b3;
+    cursor: pointer;
+}
+.container .form_table {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+}
+.form_table .contenair_col {
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+}
+.form_table .contenair_row {
+    font-size: 18px;
+}
+.form_table .contenair_row .row,
+.form_table .contenair_col .column {
+    font-family: "Times New Roman", Times, serif;
+    color: antiquewhite;
+}
+.form_table .contenair_col #input_col {
+    margin-left: 5px;
+    box-shadow: 2px 2px;
+}
+.form_table .contenair_row #input_row {
+    margin-left: 38px;
+    box-shadow: 3px 3px;
+}
+.form_table .contenair_col .column:hover,
+.form_table .contenair_row .row:hover {
+    cursor: pointer;
+    color: darkcyan;
+}
+.container #create_table {
+    margin-left: 45%;
+    margin-top: 35px;
+    padding: 5px;
+    border: 2px solid rgb(180, 170, 170);
+    box-shadow: 2px 2px #888888;
+    font-family: "Times New Roman", Times, serif;
+    font-size: medium;
+}
+.container #create_table:hover {
+    background-color: rgb(57, 245, 44);
+    cursor: pointer;
+}
+thead td {
+    font-weight: bold;
+    color: bisque;
+}
+td {
+    border: 1px solid rgb(124, 122, 122);
+    padding: 10px;
+    color: springgreen;
+}
+td:hover {
+    cursor: pointer;
+    background-color: #85ffbd;
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+    color: #2a2f3b;
+}
+thead td:hover {
+    background-color: #4158d0;
+    background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
+
+    color: aqua;
+}
+.container > div {
+    margin: 10px;
+}
+
+.container #target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: nowrap;
+}
+#target #body_table td {
+    font-size: 10px;
+}
+.sub_auther {
+    position: absolute;
+    top: 95vh;
+    left: 88%;
+    font-size: smaller;
+    color: #7787b3;
+}
+a {
+    color: #386a4f;
+    text-decoration: none;
+}
+a:hover {
+    color: aqua;
+}
